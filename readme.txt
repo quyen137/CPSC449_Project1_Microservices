@@ -81,7 +81,7 @@ Posting Microservices
 		localhost:2015/post/posts/delete/<id>
 		example: localhost:2015/post/posts/delete/1
 
-	To view a specific create: 
+	To create: 
 	json format is required, all fields are required, 
 		REQUEST GET, POST
 		localhost:2015/post/posts
