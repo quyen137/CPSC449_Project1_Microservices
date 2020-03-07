@@ -55,15 +55,15 @@ localhost:2015/post
 localhost:2015/post/posts/all	
 
 ### To view a specific post: REQUEST GET </br>
-localhost:2015/post/posts/<id>
+localhost:2015/post/posts/<id> </br>
 example: localhost:2015/post/posts/1
 
 ### To delete a specific post: REQUEST GET, DELETE </br>
-localhost:2015/post/posts/delete/<id>
+localhost:2015/post/posts/delete/<id> </br>
 example: localhost:2015/post/posts/delete/1
 
 ### To create: REQUEST GET, POST</br>
-json format is required, all fields are required, 
+json format is required, all fields are required,  </br>
 localhost:2015/post/posts
 ```sh
     {
@@ -76,5 +76,28 @@ localhost:2015/post/posts
     }
 ```
 ### To view a specific community in posts: REQUEST GET </br>
-http://localhost:5000/posts/<community name>
+http://localhost:5000/posts/<community name> </br>
 example: localhost:2015/post/posts/Community_1
+
+# Voting Microservices </br>
+### View all votes: http://127.0.0.1:5000/api/v1/resources/votes/all
+
+### View votes by vote id: http://127.0.0.1:5000/api/v1/resources/votebyid/1
+
+### Upvote a post: http://127.0.0.1:5000/api/v1/resources/upvote </br>
+    Have to input in json format.  </br>
+    Example {“postID”: 10}
+
+### Downvote a post: http://127.0.0.1:5000/api/v1/resources/downvote </br>
+    Have to input in json format.   </br>
+    Example {“postID”: 11} </br>
+
+### Report the number of upvotes and downvotes for a post: </br>
+    http://127.0.0.1:5000/api/v1/resources/votesbypostid/101 </br>
+     
+### List the n top-scoring posts to any community: </br>
+    http://127.0.0.1:5000/api/v1/resources/toppostscore/3 </br>
+
+### Given a list of post identifiers, return the list sorted by score: </br>
+    http://127.0.0.1:5000/api/v1/resources/listsortedbyscore </br>
+    Have to input a list: Example: [10, 13, 15] </br>
