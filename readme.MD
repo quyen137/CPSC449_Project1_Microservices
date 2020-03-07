@@ -47,7 +47,7 @@ For Ops role, I will be using Caddy for webserver and Gunicorn for WSGI server
 		--access-logfile - also have been implemented for testing of load balancing requests in Procfile
 ```
 # Posting Microservices </br>
-## For Posting Microservices, below is the following route to specific functions </br>
+## For Posting Microservices, below is the following route to specific functions 
 ### To view home page for post: REQUEST GET  </br>
 localhost:2015/post
 
@@ -65,7 +65,7 @@ example: localhost:2015/post/posts/delete/1
 ### To create: REQUEST GET, POST</br>
 json format is required, all fields are required, 
 localhost:2015/post/posts
-example: 
+```sh
     {
         "Username": "User 1",
         "PostTitle": "Post Title 1",
@@ -74,6 +74,7 @@ example:
         "Community": "Community 1",
         "URLResource": "www.URLResource1.com"
     }
+```
 ### To view a specific community in posts: REQUEST GET </br>
 http://localhost:5000/posts/<community name>
 example: localhost:2015/post/posts/Community_1
