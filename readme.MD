@@ -85,19 +85,19 @@ example: localhost:2015/post/posts/Community_1
 ### View votes by vote id: http://127.0.0.1:5000/api/v1/resources/votebyid/1
 
 ### Upvote a post: http://127.0.0.1:5000/api/v1/resources/upvote </br>
-    Have to input in json format.  </br>
+    Have to input in json format.  
     Example {“postID”: 10}
 
 ### Downvote a post: http://127.0.0.1:5000/api/v1/resources/downvote </br>
-    Have to input in json format.   </br>
-    Example {“postID”: 11} </br>
+    Have to input in json format.  
+    Example {“postID”: 11} 
 
 ### Report the number of upvotes and downvotes for a post: </br>
-    http://127.0.0.1:5000/api/v1/resources/votesbypostid/101 </br>
+    http://127.0.0.1:5000/api/v1/resources/votesbypostid/101 
      
 ### List the n top-scoring posts to any community: </br>
-    http://127.0.0.1:5000/api/v1/resources/toppostscore/3 </br>
+    http://127.0.0.1:5000/api/v1/resources/toppostscore/3 
 
 ### Given a list of post identifiers, return the list sorted by score: </br>
-    http://127.0.0.1:5000/api/v1/resources/listsortedbyscore </br>
-    Have to input a list: Example: [10, 13, 15] </br>
+    http://127.0.0.1:5000/api/v1/resources/listsortedbyscore 
+    Have to input a list: Example: [10, 13, 15] 
