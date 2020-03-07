@@ -49,23 +49,28 @@ For Ops role, I will be using Caddy for webserver and Gunicorn for WSGI server
 # Posting Microservices </br>
 ## For Posting Microservices, below is the following route to specific functions 
 ### To view home page for post: REQUEST GET  </br>
+```sh
 localhost:2015/post
-
+```
 ### To view all posts: REQUEST GET  </br>
+```sh
 localhost:2015/post/posts/all	
-
+```
 ### To view a specific post: REQUEST GET </br>
+```sh
 localhost:2015/post/posts/<id> </br>
 example: localhost:2015/post/posts/1
-
+```
 ### To delete a specific post: REQUEST GET, DELETE </br>
+```sh
 localhost:2015/post/posts/delete/<id> </br>
 example: localhost:2015/post/posts/delete/1
-
+```
 ### To create: REQUEST GET, POST</br>
-json format is required, all fields are required,  </br>
-localhost:2015/post/posts
 ```sh
+json format is required, all fields are required, 
+localhost:2015/post/posts
+Example
     {
         "Username": "User 1",
         "PostTitle": "Post Title 1",
@@ -76,9 +81,10 @@ localhost:2015/post/posts
     }
 ```
 ### To view a specific community in posts: REQUEST GET </br>
+```sh
 http://localhost:5000/posts/<community name> </br>
 example: localhost:2015/post/posts/Community_1
-
+```
 # Voting Microservices </br>
 ### View all votes: http://127.0.0.1:5000/api/v1/resources/votes/all
 
