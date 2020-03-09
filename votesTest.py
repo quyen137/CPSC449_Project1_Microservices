@@ -92,7 +92,7 @@ def case_Get_Top_n_Post_Score(n):
 # ===================================
 def case_List_Sorted_By_Score(listPostID):
     URL = 'http://127.0.0.1:5000/api/v1/resources/listsortedbyscore'
-    listID = {'listID': listPostID}    
+    listID = {"listID": listPostID}  
     resp = requests.post(URL, json = listID)
     if resp.status_code == 200:
         obj = resp.json()

@@ -86,7 +86,7 @@ def top_post_score(topscore):
 def up_votes():
     if request.method == 'GET':
         return filter_votes(request.args)
-        return up_vote(request.data)
+        # return up_vote(request.data)
     elif request.method == 'POST':
         return up_vote(request.data)
 
@@ -131,7 +131,7 @@ def down_vote(vote):
     return filter_votes(vote), status.HTTP_200_OK
 
 # list sorted by score http://127.0.0.1:5000/api/v1/resources/listsortedbyscore
-#input list of postID [10, 13, 15]
+#input example: {"list": [10, 13, 15]}
 @app.route('/api/v1/resources/listsortedbyscore', methods=['GET', 'POST'])
 def list_sorted():
     if request.method == 'GET':
