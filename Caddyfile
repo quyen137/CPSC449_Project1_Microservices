@@ -1,4 +1,4 @@
-localhost/post {
+localhost/posts {
     log stdout
     proxy / 127.0.0.1:5000 :5001 :5002 {
         policy round_robin
@@ -6,7 +6,7 @@ localhost/post {
     }
 }
 
-localhost/vote {
+localhost/votes {
     log stdout
     proxy / 127.0.0.1:5100 :5101 :5102 {
         policy round_robin
